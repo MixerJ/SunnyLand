@@ -428,8 +428,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2: {fileID: 1244190729}
   anim: {fileID: 1244190732}
+  cl2: {fileID: 1244190730}
   PlayerSpeed: 300
   PlayerJumpHigher: 300
+  ground:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!95 &1244190732
 Animator:
   serializedVersion: 3
@@ -505,7 +509,7 @@ GameObject:
   - component: {fileID: 1395899450}
   - component: {fileID: 1395899449}
   - component: {fileID: 1395899451}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
