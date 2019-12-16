@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Rigidbody2D rb2;
+    private Rigidbody2D rb2;
     // 处理动画
-    public Animator anim;
+    private Animator anim;
     // player碰撞体
     public Collider2D cl2;
     // 玩家移动速度
@@ -19,7 +19,11 @@ public class PlayerController : MonoBehaviour
     private float faceMove;
     // 获取图层
     public LayerMask ground;
-
+    void Start()
+    {
+        rb2 = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void FixedUpdate()
